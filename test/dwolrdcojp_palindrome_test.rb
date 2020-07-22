@@ -25,5 +25,9 @@ class DwolrdcojpPalindromeTest < Minitest::Test
   def test_integer_palindrome
     assert 12321.palindrome?
   end
+
+  def test_string_of_spaces
+    refute "     ".palindrome?
+  end
   
 end
